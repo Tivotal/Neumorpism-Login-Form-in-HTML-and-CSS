@@ -1,0 +1,133 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #dde1e7;
+}
+
+.wrapper {
+  width: 330px;
+  background: #dde1e7;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.wrapper .text {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #595959;
+}
+
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.wrapper form .field:nth-child(2) {
+  margin-top: 20px;
+}
+
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  padding-left: 45px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #dde1e7;
+  color: #595959;
+  border-radius: 25px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.wrapper form .field input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #ffffff73;
+}
+
+.wrapper form .field span {
+  position: absolute;
+  color: #595959;
+  width: 50px;
+  line-height: 50px;
+}
+
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 45px;
+  pointer-events: none;
+  color: #666666;
+}
+
+.wrapper form .field input:valid ~ label {
+  opacity: 0;
+}
+
+.wrapper form .forgot-pass {
+  text-align: left;
+  margin: 10px 0 10px 5px;
+}
+
+.wrapper form .forgot-pass a {
+  font-size: 16px;
+  color: #3498bd;
+  text-decoration: none;
+}
+
+.wrapper form .forgot-pass a:hover {
+  text-decoration: underline;
+}
+
+.wrapper form button {
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #dde1e7;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+}
+
+.wrapper form button:focus {
+  color: #3498bd;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.wrapper form .sign-up {
+  margin: 10px 0;
+  color: #595959;
+  font-size: 16px;
+}
+
+.wrapper form .sign-up a {
+  text-decoration: none;
+  color: #3498bd;
+}
+
+.wrapper form .sign-up a:hover {
+  text-decoration: underline;
+}
